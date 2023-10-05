@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+	<link rel="manifest" href="static/favicon/site.webmanifest">
+	<link rel="shortcut icon" href="static/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<script defer="defer" src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>SabioTrade</title>
+</head>
+
+<body>
+	<header class="header" style="top: 0px;">
+		<div class="header__last">
+			<div class="container">
+				<div class="logo"><a href="/"></a></div>
+				<div class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#why-us"
+								class="nav__link buttonS buttons buttons--ghost-secondary buttons__size--middle"
+								data-event="sabio-header_whyus">¿Por qué nosotros?</a></li>
+						<li class="nav__item"><a href="#plans"
+								class="nav__link buttonS buttons buttons--ghost-secondary buttons__size--middle"
+								data-event="sabio-header_plans">Planes</a></li>
+						<li class="nav__item"><a href="#reviews"
+								class="nav__link buttonS buttons buttons--ghost-secondary buttons__size--middle"
+								data-event="sabio-header_reviews">Reseñas</a></li>
+						<li class="nav__item hide"><a href="#faq"
+								class="nav__link buttonS buttons buttons--ghost-secondary buttons__size--middle"
+								data-event="sabio-header_faq">Preguntas frecuentes</a></li>
+					</ul>
+				</div>
+				<div class="header__controls">
+					<div class="header__controls-item">
+						<div class="lang">
+							<div class="lang__container">
+								<div class="lang__btn buttons buttons--ghost-secondary buttons__size--middle">
+									<div class="lang__menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 12H21M3 6H21M9 18H21" stroke="#B9BADB" stroke-width="1.6"
+												stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="lang__icon"><img src="images/esp.svg" alt="ES Flag"></div>
+									<div class="lang__text buttonS">SPA</div>
+									<div class="lang__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M6 9L12 15L18 9" stroke="#B9BADB" stroke-width="1.6" stroke-linecap="round"
+												stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
+								<div class="lang__list">
+									<div class="logo"><a href="/"></a></div>
+									<div class="header__controls-item"><a href="#plans"
+											class="buttons buttons--secondary buttonS" data-event="sabio-right-plans">Get
+											funded</a></div>
+									<div class="lang__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18M6 6L18 18" stroke="#4A4C8E" stroke-width="1.6"
+												stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="lang__title">Choose language</div><a href="/" class="lang__item"
+										data-google-lang="en" data-event="sabio-language_change" data-params="en">
+										<div class="lang__icon"><img src="images/en.svg" alt="UK Flag"></div>
+										<div class="lang__text buttonS">ENG</div>
+										<div class="lang__text__mobile">English</div>
+									</a><a href="/index-spa.html" class="lang__item" data-google-lang="es"
+										data-event="sabio-language_change" data-params="spa">
+										<div class="lang__icon"><img src="images/esp.svg"
+												alt="Spain Flag, representing the Spanish language."></div>
+										<div class="lang__text buttonS">SPA</div>
+										<div class="lang__text__mobile">Spanish</div>
+									</a><a href="/index-por.html" class="lang__item" data-google-lang="pt"
+										data-event="sabio-language_change" data-params="por">
+										<div class="lang__icon"><img src="images/pt.svg"
+												alt="Flag of Portugal, representing the portuguese language."></div>
+										<div class="lang__text buttonS">POR</div>
+										<div class="lang__text__mobile">Portuguese</div>
+									</a><a href="/index-ita.html" class="lang__item" data-google-lang="it"
+										data-event="sabio-language_change" data-params="ita">
+										<div class="lang__icon"><img src="images/it.svg"
+												alt="Flag of Italy, representing the Italian language."></div>
+										<div class="lang__text buttonS">ITA</div>
+										<div class="lang__text__mobile">Italia</div>
+									</a><a href="/index-fra.html" class="lang__item" data-google-lang="fr"
+										data-event="sabio-language_change" data-params="fra">
+										<div class="lang__icon"><img src="images/fr.svg"
+												alt="Flag of France, representing the French language."></div>
+										<div class="lang__text buttonS">FRA</div>
+										<div class="lang__text__mobile">France</div>
+									</a><a href="/index-ger.html" class="lang__item" data-google-lang="ge"
+										data-event="sabio-language_change" data-params="ger">
+										<div class="lang__icon"><img src="images/de.svg"
+												alt="Flag of Germany, representing the German language."></div>
+										<div class="lang__text buttonS">GER</div>
+										<div class="lang__text__mobile">Germany</div>
+									</a><a href="https://dashboard.sabiotrade.io/Account/Login?ReturnUrl=%2Findex"
+										class="buttons buttons--ghost-secondary buttons__size--middle buttonS lang__last-btn"
+										target="_blank" data-event="sabio-login">Log in</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__controls-item none"><a
+							href="https://dashboard.sabiotrade.io/Account/Login?ReturnUrl=%2Findex"
+							class="buttons buttons--ghost-secondary buttons__size--middle buttonS" target="_blank"
+							data-event="sabio-login">Iniciar sesión</a></div>
+					<div class="header__controls-item"><a href="#plans" class="buttons buttons--secondary buttonS"
+							data-event="sabio-right-plans">Obtener financiamiento</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="block-hero">
+		<div class="container hero-container">
+			<h1 class="block-hero__title">Tus habilidades.<br />
+				Nuestra financiación.</h1>
+			<div class="block-hero__subtitle">Demuestra tu experiencia en el trading y califica para obtener hasta $100,000
+				en financiamiento de nuestra cartera.</div>
+			<div class="block-hero__button">
+				<a href="#plans" class="buttons buttons--primary buttons__size--big" data-event="sabio-main_plans">
+					<span class="buttons__text buttonS">Comenzar la evaluación</span>
+					<span class="buttons__chevron">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.5 18L16.5 12L10.5 6" stroke="#FCFDFF" stroke-width="1.6" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</span>
+				</a>
+			</div>
+			<img class="block-hero__tab" src="images/container.png" alt="">
+			<img class="block-hero__mobil" src="images/container-mob.png" alt="">
+		</div>
+	</div>
+	<div class="block-get" id="why-us">
+		<div class="container">
+			<div class="block-get__wrapper">
+				<div class="block-get__title">La forma sencilla de comenzar tu carrera en el trading propietario.</div>
+				<div class="block-get__grid">
+					<div class="block-get__grid-item">
+						<div class="block-get__grid-desc">Selecciona el programa de financiamiento ideal para tus necesidades
+						</div>
+					</div>
+					<div class="block-get__grid-item">
+						<div class="block-get__grid-desc">Obtén tus datos de inicio de sesión para operar</div>
+					</div>
+					<div class="block-get__grid-item">
+						<div class="block-get__grid-desc">Supera con éxito la evaluación</div>
+					</div>
+					<div class="block-get__grid-item">
+						<div class="block-get__grid-desc">Reclama tu cuenta financiada y únete a nuestro equipo de trading
+							propietario
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="plan">
+		<div class="container">
+			<div class="plan__wrapper">
+				<div class="plan__header">
+					<p class="plan__title">Tarifas de acuerdo a tus necesidades. Elige la correcta</p>
+					<div class="plan__info">
+						<div class="plan__info-icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_717_9455)">
+									<path
+										d="M4.66659 14.8348V7.50146M1.33325 8.8348V13.5015C1.33325 14.2378 1.93021 14.8348 2.66659 14.8348H11.6174C12.6046 14.8348 13.4441 14.1146 13.5942 13.1389L14.3121 8.47225C14.4985 7.26073 13.5611 6.16813 12.3354 6.16813H9.99992C9.63173 6.16813 9.33325 5.86965 9.33325 5.50146V3.14536C9.33325 2.23746 8.59726 1.50146 7.68936 1.50146C7.47281 1.50146 7.27657 1.62899 7.18862 1.82688L4.84254 7.10556C4.73554 7.34631 4.4968 7.50146 4.23334 7.50146H2.66659C1.93021 7.50146 1.33325 8.09842 1.33325 8.8348Z"
+										stroke="#F7CB54" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_717_9455">
+										<rect width="16" height="16" fill="white" transform="translate(0 0.167969)"></rect>
+									</clipPath>
+								</defs>
+							</svg></div>
+						<div class="plan__info-text">Cuanto mayor sea el paquete, mayor será el capital inicial en la cuenta.
+						</div>
+					</div>
+				</div>
+				<div id="plans">
+					<div class="table">
+						<div class="table__row">
+							<div class="table__col headers first"></div>
+							<div class="table__col headers border">Standard</div>
+							<div class="table__col headers popular border" style="border-radius: 24px 24px 0 0;">Premium<div
+									class="table__popular">
+									<div class="table__popular-icon"><svg width="39" height="48" viewBox="0 0 39 48" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.64645 47.5215C3.84171 47.7168 4.15829 47.7168 4.35355 47.5215L7.53553 44.3395C7.7308 44.1443 7.7308 43.8277 7.53553 43.6324C7.34027 43.4372 7.02369 43.4372 6.82843 43.6324L4 46.4609L1.17157 43.6324C0.976311 43.4372 0.659728 43.4372 0.464466 43.6324C0.269204 43.8277 0.269204 44.1443 0.464466 44.3395L3.64645 47.5215ZM4.5 47.168C4.5 38.504 9.33753 29.4685 15.9944 22.6597C22.6605 15.8415 31.0308 11.3762 37.978 11.6828L38.0221 10.6838C30.6677 10.3592 22.0379 15.0478 15.2794 21.9606C8.51167 28.8828 3.5 38.1553 3.5 47.168H4.5Z"
+												fill="#436BF7"></path>
+										</svg></div>
+									<div class="table__popular-text">Más popular</div>
+								</div>
+							</div>
+							<div class="table__col headers border">Platinum</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name" style="padding-bottom: 24px;">
+								<p class="table__p">Balance Inicial</p>
+							</div>
+							<div class="table__col content " style="padding-bottom: 24px;">
+								<p class="table__p table__p-big">$10,000</p>
+							</div>
+							<div class="table__col content popular " style="padding-bottom: 24px;">
+								<p class="table__p table__p-big">$25,000</p>
+							</div>
+							<div class="table__col content " style="padding-bottom: 24px;">
+								<p class="table__p table__p-big">$100,000</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name" style="padding-top: 24px;">
+								<p class="table__p">Apalancamiento</p>
+							</div>
+							<div class="table__col content" style="padding-top: 24px;">
+								<p class="table__p">30:1</p>
+							</div>
+							<div class="table__col content popular" style="padding-top: 24px;">
+								<p class="table__p">30:1</p>
+							</div>
+							<div class="table__col content" style="padding-top: 24px;">
+								<p class="table__p">30:1</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name">
+								<p class="table__p">Objetivo de Ganancias</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">10%</p>
+							</div>
+							<div class="table__col content popular">
+								<p class="table__p">10%</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">10%</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name">
+								<p class="table__p">Límite de Pérdida Diaria</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">3%</p>
+							</div>
+							<div class="table__col content popular">
+								<p class="table__p">3%</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">3%</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name">
+								<p class="table__p">Pérdida Máxima DInámica</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">6%</p>
+							</div>
+							<div class="table__col content popular">
+								<p class="table__p">6%</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">6%</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name">
+								<p class="table__p">Pago de Ganancias</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">70%</p>
+							</div>
+							<div class="table__col content popular">
+								<p class="table__p">80%</p>
+							</div>
+							<div class="table__col content">
+								<p class="table__p">80%</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col first name">
+								<p class="table__p">Reset Fee Discount</p>
+							</div>
+							<div class="table__col content border">
+								<p class="table__p">10%</p>
+							</div>
+							<div class="table__col content popular border">
+								<p class="table__p">20%</p>
+							</div>
+							<div class="table__col content border">
+								<p class="table__p">20%</p>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__col footers first info">Todos los planes incluyen: Educación Premium, y señales
+								de Trading
+							</div>
+							<div class="table__col footers">
+								<p class="table__price">$50</p>
+								<p class="table__price-name">Pago Único</p><a href="https://sabiotrade.com/checkout?id=1"
+									class="buttons buttons--secondary buttons__size--middle" data-event="sabio-funded_standard"
+									data-productid="1" data-url="checkout">Comenzar la Evaluación</a>
+							</div>
+							<div class="table__col footers popular" style="border-radius: 0 0 24px 24px;">
+								<p class="table__price">$125</p>
+								<p class="table__price-name">Pago Único</p><a href="https://sabiotrade.com/checkout?id=2"
+									class="buttons buttons--primary buttons__size--middle" data-event="sabio-funded_premium"
+									data-productid="2" data-url="checkout">Comenzar la Evaluación</a>
+							</div>
+							<div class="table__col footers">
+								<p class="table__price">$500</p>
+								<p class="table__price-name">Pago Único</p><a href="https://sabiotrade.com/checkout?id=3"
+									class="buttons buttons--secondary buttons__size--middle" data-event="sabio-funded_platinum"
+									data-productid="3" data-url="checkout">Comenzar la Evaluación</a>
+							</div>
+						</div>
+					</div>
+					<div class="plan__mobile">
+						<div class="tabs tabs--plan">
+							<ul class="tabs__list">
+								<li class="tabs__btn tabs__btn--active" data-tabs-path="tab-plan-1">
+									<div class="plan-block">
+										<div class="plan-block__title">Premium</div>
+										<div class="plan-block__balance-text">Balance Inicial</div>
+										<div class="plan-block__balance">$25,000</div>
+										<div class="plan-block__price">$125</div>
+										<div class="plan-block__price-text">Pago Único</div>
+									</div>
+								</li>
+								<li class="tabs__btn" data-tabs-path="tab-plan-2">
+									<div class="plan-block">
+										<div class="plan-block__title">Standard</div>
+										<div class="plan-block__balance-text">Balance Inicial</div>
+										<div class="plan-block__balance">$10,000</div>
+										<div class="plan-block__price">$50</div>
+										<div class="plan-block__price-text">Pago Único</div>
+									</div>
+								</li>
+								<li class="tabs__btn" data-tabs-path="tab-plan-3">
+									<div class="plan-block">
+										<div class="plan-block__title">Platinum</div>
+										<div class="plan-block__balance-text">Balance Inicial</div>
+										<div class="plan-block__balance">$100,000</div>
+										<div class="plan-block__price">$500</div>
+										<div class="plan-block__price-text">Pago Único</div>
+									</div>
+								</li>
+							</ul>
+							<div class="tabs__content">
+								<div class="tabs__item tabs__item--active" data-tabs-target="tab-plan-1">
+									<div class="plan-list">
+										<div class="plan-list__header">What you will get</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Apalancamiento</div>
+											<div class="plan-list__text">30:1</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Objetivo de Ganancias</div>
+											<div class="plan-list__text">10%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Límite de Pérdida Diaria</div>
+											<div class="plan-list__text">3%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pérdida Máxima DInámica</div>
+											<div class="plan-list__text">6%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pago de Ganancias</div>
+											<div class="plan-list__text">80%</div>
+										</div>
+									</div><a href="checkout?id=2" class="buttons buttons--primary"
+										data-event="sabio-funded_premium" data-productid="2" data-url="checkout">Comenzar la
+										Evaluación</a>
+									<div class="plan__desc">Todos los planes incluyen: Educación Premium, y señales de Trading
+									</div>
+								</div>
+								<div class="tabs__item" data-tabs-target="tab-plan-2">
+									<div class="plan-list">
+										<div class="plan-list__header">What you will get</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Apalancamiento</div>
+											<div class="plan-list__text">30:1</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Objetivo de Ganancias</div>
+											<div class="plan-list__text">10%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Límite de Pérdida Diaria</div>
+											<div class="plan-list__text">3%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pérdida Máxima DInámica</div>
+											<div class="plan-list__text">6%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pago de Ganancias</div>
+											<div class="plan-list__text">70%</div>
+										</div>
+									</div><a href="checkout?id=1" class="buttons buttons--primary"
+										data-event="sabio-funded_standard" data-productid="1" data-url="checkout">Comenzar la
+										Evaluación</a>
+									<div class="plan__desc">Todos los planes incluyen: Educación Premium, y señales de Trading
+									</div>
+								</div>
+								<div class="tabs__item" data-tabs-target="tab-plan-3">
+									<div class="plan-list">
+										<div class="plan-list__header">What you will get</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Apalancamiento</div>
+											<div class="plan-list__text">30:1</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Objetivo de Ganancias</div>
+											<div class="plan-list__text">10%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Límite de Pérdida Diaria</div>
+											<div class="plan-list__text">3%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pérdida Máxima DInámica</div>
+											<div class="plan-list__text">6%</div>
+										</div>
+										<div class="plan-list__row">
+											<div class="plan-list__title">Pago de Ganancias</div>
+											<div class="plan-list__text">80%</div>
+										</div>
+									</div><a href="checkout?id=3" class="buttons buttons--primary"
+										data-event="sabio-funded_platinum" data-productid="3" data-url="checkout">Comenzar la
+										Evaluación</a>
+									<div class="plan__desc">Todos los planes incluyen: Educación Premium, y señales de Trading
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-trade">
+		<div class="container">
+			<div class="block-trade__wrapper">
+				<div class="block-trade__title headingXXL">Tú operas, nosotros asumimos los riesgos. Tú ganas, nosotros
+					ganamos</div><a href="#plans" class="buttons buttons--primary buttons__size--big"
+					data-event="sabio-youtrade_plans"><span class="buttons__text buttonS">Comienza la evaluación</span><span
+						class="buttons__chevron"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.5 18L16.5 12L10.5 6" stroke="#FCFDFF" stroke-width="1.6" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="block-video" id="reviews">
+		<div class="container">
+			<div class="block-video__subtitle">CÓMO FUNCIONA</div>
+			<div class="block-video__title">¿Qué es SabioTrade?</div>
+			<div class="block-video__content">
+				<div class="block-video__video" data-src="TdS7-P1gx5k">
+					<div id="video-container"></div>
+				</div>
+				<div class="block-video__image" data-event="sabio_video-start">
+					<picture>
+						<source media="(min-width:480px)" srcset="images/decktop.jpg">
+						<img src="images/mobile.png" alt="mobile.png">
+					</picture>
+				</div>
+				<div class="block-video__btn" data-event="sabio_video-start">
+					<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M23.9998 40.4007V23.6328C23.9587 23.3069 23.9878 22.9761 24.085 22.6624C24.1823 22.3487 24.3455 22.0595 24.5637 21.814C24.7818 21.5686 25.05 21.3726 25.3501 21.2392C25.6502 21.1059 25.9754 21.0382 26.3038 21.0408C26.9334 21.0139 27.5552 21.1876 28.0798 21.5368L41.7278 29.5367C42.9438 30.2407 43.5998 30.8167 43.5998 31.9527C43.5998 33.0887 42.9438 33.6647 41.7278 34.3687L28.0798 42.3686C27.5552 42.7178 26.9334 42.8915 26.3038 42.8646C25.9859 42.8703 25.6703 42.8091 25.3775 42.6851C25.0847 42.5611 24.8213 42.377 24.6041 42.1448C24.3869 41.9125 24.2209 41.6373 24.1168 41.3368C24.0127 41.0364 23.9728 40.7175 23.9998 40.4007Z"
+							fill="white"></path>
+						<rect x="1.06666" y="1.06666" width="61.8667" height="61.8662" rx="30.9331" stroke="white"
+							stroke-width="2.13333"></rect>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="faq" id="faq">
+		<div class="container">
+			<div class="faq__wrapper">
+				<div class="faq__title headingXXL">Preguntas frecuentes</div>
+				<div class="tabs">
+					<ul class="tabs__list">
+						<li class="tabs__btn tabs__btn--active" data-tabs-path="tab-1" data-event="sabio-faq_rules"
+							data-params="0">Reglas de trading</li>
+						<li class="tabs__btn" data-tabs-path="tab-2" data-event="sabio-faq_accounts" data-params="0">Cuentas
+						</li>
+						<li class="tabs__btn" data-tabs-path="tab-3" data-event="sabio-faq_general" data-params="0">Preguntas
+							generales</li>
+					</ul>
+					<div class="tabs__content">
+						<div class="tabs__item tabs__item--active" data-tabs-target="tab-1">
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="1">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuáles son las
+												reglas de la Cuenta de Evaluación Prop-Trading de SabioTrade?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">La compañía de Trading Propietario SabioTrade
+											establece las siguientes reglas:<ul>
+												<li>3% Límite de Pérdida Diaria (falta grave)</li>
+												<li>6% Descenso Máximo Arrastrado del saldo (hard breach)</li>
+												<li>Cierre los viernes - todas las posiciones se cierran los viernes a las 3:45 p.m.
+													EST (falta leve)</li>
+												<li>Debes realizar una operación una vez cada 30 días (falta grave)</li>
+											</ul>Esto es para evaluar tu Gestión de Riesgos y Estrategias de Trading.</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="2">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuál es la
+												diferencia entre una regla de Infracción grave y una regla de infracción
+												leve?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<ul>
+												<li>Infracción leve, significa que cerraremos todas las operaciones que hayan
+													infringido la regla en cuestión. No obstante, podrás seguir operando en tu cuenta
+													de evaluación o en la cuenta que financies.</li>
+												<li>Infracción grave significa que has infringido las reglas para el límite de
+													pérdidas diarias o para la pérdida dinámica máxima. Las reglas para ambos casos,
+													constituyen una infracción grave. Si se diese el caso de que tuvieras una
+													infracción grave, frente a tal situación, no pasarás el proceso de evaluación o
+													bien se te quitará la cuenta que se haya financiado.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="3">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cómo podrías
+												calcular un límite de pérdidas diarias del 3 %?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>El límite de pérdidas diarias, se calcula según el saldo existente al final del día
+												y con respecto al día anterior (5:00 p. m. EST - hora estándar del este).</p>
+											<p>Por ejemplo: Si el saldo al final del día con respecto al día anterior era de 100000
+												$, en tal caso, infringirías el límite de pérdidas diarias del 3 %, si al día
+												siguiente, tu capital descendiera a 97000 $.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="4">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cómo podrías
+												calcular una pérdida dinámica máxima del 6 %?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>La pérdida dinámica máxima se refiere al máximo que puede descender tu cuenta, antes
+												de que cometas una infracción grave contra la misma. Cuando abres una cuenta, tu
+												pérdida dinámica máxima se fija en el 6 % de tu saldo inicial. Este 6 % actúa de
+												forma dinámica con tu saldo cerrado para las inversiones, hasta que alcances el 6 %
+												de ganancias en tu cuenta. Cuando hayas alcanzado el 6 % en tu cuenta, el máximo
+												dinámico se bloqueará en relación a tu saldo inicial, por lo cual, ya no actuará de
+												forma dinámica con tu cuenta.</p>
+											<p>Por ejemplo: Si tu saldo inicial es de 100000 $, podrás permitir que descienda hasta
+												94000 $, antes de cometer una infracción contra la regla de la pérdida dinámica
+												máxima. Teniendo esto en cuenta, supongamos por ejemplo, que haces que tu cuenta
+												llegue a un saldo cerrado de 103000 $. Este sería tu nuevo punto más alto, lo cual,
+												también significará que tu nueva pérdida dinámica máxima será de 97000 $. Después de
+												esto, supongamos que haces que tu cuenta llegue a un saldo cerrado de 103000 $, lo
+												cual, pasaría a ser tu nuevo punto más alto. Teniendo en cuenta lo anterior, en este
+												punto, tu pérdida dinámica máxima quedaría bloqueada en relación a tu saldo inicial
+												de 100000 $. Por tanto, independientemente de lo mucho que suba tu cuenta, solamente
+												vas a infringir esta regla, si tu cuenta retrocede por debajo de 100000 $ (ten en
+												cuenta que, todavía, podrías llegar a infringir el límite de pérdidas diarias).
+												Analicemos esto con un ejemplo: si haces que tu cuenta llegue a los 170000 $,
+												siempre que en un día determinado no descienda más del 3 %, solamente cometerás una
+												infracción, si el capital de tu cuenta alcanza los 100000 $.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="5">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Puedo mantener
+												las posiciones durante el fin de semana?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>En SabioTrade, requerimos que todas las operaciones se cierren antes de las 3:45pm
+												EST del viernes. Cualquier operación que quede abierta después de esta hora se
+												cerrará automáticamente. Ten en cuenta que esto es sólo una falta leve y podrás
+												seguir operando una vez que los mercados vuelvan a abrir. En otras palabras, en la
+												plataforma de trading SabioTrade, puedes hacer Day Trading (también conocido como
+												Intraday Trading), o mantener posiciones abiertas durante varios días, pero no es
+												posible mantener posiciones abiertas durante el fin de semana.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_rules" data-params="7">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Existe alguna
+												infracción en caso de inactividad?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Sí. Si no realizas una operación al menos una vez cada 30 días en tu cuenta en la
+												SabioTraderoom, te consideraremos inactivo y tu cuenta será penalizada. Perderás el
+												acceso a tu SabioTraderoom para esa cuenta en concreto, pero podrás seguir viendo tu
+												historial de operaciones y estadísticas anteriores en tu SabioDashboard.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__item" data-tabs-target="tab-2">
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="1">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuánto tiempo
+												será necesario para que pueda recibir mi cuenta de evaluación?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Tu cuenta de evaluación estará lista para operar a los pocos minutos de realizar la
+												compra. Busca las credenciales para tu SabioTraderoom y SabioDashboard en tu bandeja
+												de entrada inmediatamente después de completar tu compra. Desde el SabioDashboard
+												puedes seguir el progreso de tu Evaluación, solicitar tus pagos futuros y acceder a
+												nuestros recursos de trading, cursos de trading y nuestra plataforma de trading.
+												Desde la SabioTraderoom, puedes abrir y cerrar tus operaciones, aplicar tus
+												estrategias de trading, acceder a nuestras herramientas de trading, consultar tu
+												historial de trading, etc.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="2">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuánto tiempo
+												será necesario para que pueda recibir una cuenta financiada?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Una vez que hayas aprobado la evaluación y cuando nos hayas proporcionado tus
+												documentos, en relación a la política KYC, la cuenta se activará en un plazo de 24 a
+												48 horas laborales.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="3">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">Cuando haya
+												superado la evaluación, ¿se me proporcionará una cuenta de demostración o una
+												real?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Una vez que un trader supera la evaluación de SabioTrade, te proporcionamos una
+												cuenta real, financiada con dinero real.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="4">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuáles son las
+												reglas que deben seguirse para las cuentas financiadas?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Las reglas de la cuenta SabioTrade Financiada son exactamente las mismas que las de
+												tu cuenta de Evaluación de SabioTrade. Sin embargo, con una cuenta Financiada, no
+												hay límite en los beneficios que puedes generar.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="5">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Qué ocurre si
+												sobre mi cuenta financiada pesa una infracción grave, mientras dicha cuenta esté
+												obteniendo ganancias?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Si tu cuenta financiada estuviese teniendo ganancias, mientras hayas cometido una
+												infracción grave, en tal caso, seguirás recibiendo la parte que te corresponda de
+												dichas ganancias.</p>
+											<p>Por ejemplo, si tienes una cuenta con 100000 $ y haces que la cuenta aumente a
+												110000 $. Si posteriormente cometes una infracción grave, pasaríamos a cerrar la
+												cuenta. De los 10000 $ que hayas obtenido en ganancias, tan solo se te pagaría tu
+												parte del 80 % (es decir, 8000 $).</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="6">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cómo puedo
+												retirar mis ganancias?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Cuando estés listo para solicitar tus pagos, puedes realizar tu solicitud en la
+												sección de Participación en beneficios de tu SabioDashboard. Tu cuenta de fondos se
+												congelará temporalmente para retirar tus ganancias y deducir nuestra participación
+												en los beneficios. Recibirás los fondos en tu cuenta bancaria, y recuperarás el
+												acceso a tu cuenta financiada para continuar operando en tan sólo 24 horas.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_accounts" data-params="7">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuándo puedo
+												retirar las ganancias que haya obtenido de mi cuenta financiada?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Podrás retirar tus ganancias en cualquier momento. Cuando se realice cualquier
+												solicitud de retirada, nosotros, también retiraremos nuestra parte de las ganancias
+												que hayan sido obtenidas.</p>
+											<p>Nota importante: Cuando solicites una retirada, tu pérdida dinámica máxima se fijará
+												según tu saldo inicial.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__item" data-tabs-target="tab-3">
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="1">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Debo usar una
+												de vuestras cuentas para la evaluación o puedo usar la mía?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Tenemos un software para la gestión de riesgos que se sincroniza con las cuentas que
+												hemos creado. Gracias a esto, podemos analizar tu rendimiento en tiempo real, lo
+												cual, nos permite buscar los logros o las infracciones que se hayan cometido;
+												contraviniendo las reglas. En consecuencia, deberás utilizar la cuenta que te
+												hayamos proporcionado.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="2">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuáles son los
+												países que se aceptan?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Se aceptan todos los países, a excepción de aquellos que estén en la lista de la
+												Oficina de Control de Activos Extranjeros (OFAC). Los países que se acepten, podrán
+												participar en nuestro programa.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="3">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Dónde puedo
+												seguir los progresos que vaya teniendo mi cuenta?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Al comprar una evaluación o registrarte para una prueba gratuita, recibirás acceso a
+												la SabioDashboard, donde podrás supervisar el progreso de tus cuentas de evaluación
+												y financiadas. SabioDashboard se actualiza cada vez que calculamos las métricas, lo
+												que ocurre aproximadamente cada 60 segundos. Es tu responsabilidad supervisar sus
+												niveles de incumplimiento.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="4">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿En qué
+												plataforma puedo invertir?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Nuestra tecnología de gestión de riesgos está actualmente integrada con la
+												plataforma de trading QuadCode. Cuando utilices la prueba gratuita de SabioTrade, la
+												evaluación o las cuentas financiadas, estarás operando en nuestra propia plataforma
+												de operaciones impulsada por QuadCode, directamente desde tu SabioDashboard. Tendrás
+												todo lo que necesitas para disfrutar de una experiencia de trading agradable y
+												exitosa en un mismo lugar.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="6">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Qué es el
+												apalancamiento?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>El apalancamiento máximo disponible proporcionado por la Firma de Prop-Trading
+												SabioTrade varía en función del activo.Tenemos activos con un apalancamiento de
+												hasta 1:100, o 1:500 Por ejemplo, para los pares de divisas, y en línea con las
+												buenas prácticas de gestión de riesgos, ofrecemos un apalancamiento de hasta 30:1.
+												Ten en cuenta que el apalancamiento se aplica directamente a tu operación para mayor
+												sencillez y comodidad.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="7">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cuáles son los
+												horarios para las inversiones?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Los horarios para las inversiones los establece nuestro bróker, QuadCode. SabioTrade
+												no tiene ningún control, sobre los diferentes horarios para las inversiones que se
+												establezcan, en función de los productos que ofrece QuadCode.</p>
+											<p>Por favor, ten en cuenta que los días festivos, pueden causar un determinado
+												impacto, en lo que respecta al horario que esté disponible, para que se puedan
+												llevar a cabo las inversiones.</p>
+											<p>Además, de conformidad con la regla en virtud de la cual, no se deben mantener
+												inversiones durante el fin de semana, cabe mencionar que, los viernes, siempre
+												cerramos todas las operaciones que estén abiertas, a las 3:45 p. m. EST - hora
+												estándar del este.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="8">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿En vuestras
+												cuentas se cobran comisiones?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>No.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="9">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Puedo realizar
+												inversiones durante la emisión de noticias?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Sí, puedes invertir mientras se estén emitiendo noticias.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion" data-widget="accordion">
+								<div class="accordion__container">
+									<div class="accordion__btn" data-event="sabio-faq_general" data-params="10">
+										<div class="accordion__title"><span class="accordion__title-text buttonS">¿Cómo puedo ver
+												en el extracto de mi cuenta, los cargos que se hagan?</span></div>
+										<div class="accordion__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9L12 15L18 9" stroke="#1E59F1" stroke-width="1.6" stroke-linecap="round"
+													stroke-linejoin="round"></path>
+											</svg></div>
+									</div>
+									<div class="accordion__list" data-accordion="container">
+										<div class="accordion__inner defaultS">
+											<p>Los cargos que se hagan, aparecerán a nombre de CODEVIL.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__first">
+				<div class="footer__warn-title importantXS">ADVERTENCIA DE RIESGO</div>
+				<p class="footer__warn-text">El contenido de este sitio web es solo para fines educativos y de información
+					general y no es (y no puede interpretarse ni depender de él como) un consejo personal ni una oferta para
+					comprar/vender/suscribirse a cualquiera de los productos financieros mencionados en este documento. No se
+					han tenido en cuenta los objetivos de inversión, las circunstancias financieras o las necesidades de
+					ningún individuo en la preparación o entrega del contenido.</p>
+				<p class="footer__warn-text">
+					Los productos financieros son complejos, conllevan un riesgo de pérdida, pueden subir y bajar, y se ven
+					afectados por una variedad de factores económicos y de mercado, y siempre debe obtener asesoramiento
+					profesional para asegurarse de que operar o invertir en instrumentos CFD sea adecuado para sus
+					circunstancias, y asegurarse de que usted obtiene, lee y comprende los términos y condiciones aplicables.
+				</p>
+			</div>
+			<div class="footer__middle">
+				<div class="footer__links">
+					<div class="footer__links-item"><a href="https://sabiotrade.com/terms"
+							class="footer__links-link buttonXS links links--secondary" data-event="sabio-terms">Términos &amp;
+							condiciones</a></div>
+					<div class="footer__links-item"><a href="https://sabiotrade.com/privacy"
+							class="footer__links-link buttonXS links links--secondary" data-event="sabio-privacy">Política de
+							privacidad</a></div>
+				</div>
+				<div class="social">
+					<div class="social__item">
+						<a href="https://discord.com/SabioTrade" target="_blank">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_827_1385)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M4 2.32812C2.89543 2.32812 2 3.22356 2 4.32813V20.3281C2 21.4327 2.89543 22.3281 4 22.3281H20C21.1046 22.3281 22 21.4327 22 20.3281V4.32812C22 3.22356 21.1046 2.32812 20 2.32812H4ZM14.2526 6.32812C15.4104 6.50622 16.5178 6.819 17.5535 7.24937C19.3644 9.65119 20.2642 12.3601 19.932 15.4845C18.5464 16.4046 17.2024 16.9628 15.881 17.3281C15.5538 16.9297 15.2644 16.5051 15.014 16.0599C15.4909 15.8989 15.949 15.7003 16.3819 15.4685C16.2686 15.3932 16.1566 15.3144 16.0472 15.2334C13.4459 16.327 10.5855 16.327 7.95279 15.2334C7.84457 15.3144 7.73256 15.3932 7.61805 15.4685C8.04969 15.6991 8.5065 15.8978 8.98345 16.0587C8.73302 16.5051 8.44233 16.9286 8.11638 17.327C6.79627 16.9617 5.4535 16.4035 4.06794 15.4845C3.78479 12.7893 4.35109 10.0553 6.44013 7.25165C7.47584 6.82015 8.58454 6.50622 9.74357 6.32812C9.88704 6.55644 10.0569 6.86353 10.1714 7.10782C11.3796 6.94343 12.599 6.94343 13.8298 7.10782C13.9443 6.86353 14.1104 6.55644 14.2526 6.32812ZM7.9037 12.3738C7.9037 13.1717 8.55181 13.827 9.34212 13.827C10.1463 13.827 10.7818 13.1717 10.7805 12.3738C10.7944 11.5747 10.1463 10.9195 9.34212 10.9195C8.53797 10.9195 7.9037 11.5759 7.9037 12.3738ZM13.2194 12.3738C13.2194 13.1717 13.8675 13.827 14.6578 13.827C15.462 13.827 16.0962 13.1717 16.0962 12.3738C16.1101 11.5747 15.462 10.9195 14.6578 10.9195C13.8537 10.9195 13.2194 11.5759 13.2194 12.3738Z"
+										fill="#B9BADB" />
+								</g>
+								<defs>
+									<clipPath id="clip0_827_1385">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.268555)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="social__item">
+						<a href="https://t.me/sabiotrade" target="_blank">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_827_1385)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M4 2.32812C2.89543 2.32812 2 3.22356 2 4.32812V20.3281C2 21.4327 2.89543 22.3281 4 22.3281H20C21.1046 22.3281 22 21.4327 22 20.3281V4.32813C22 3.22356 21.1046 2.32812 20 2.32812H4ZM18.9149 6.75362L16.5651 18.0563C16.5098 18.3232 16.1968 18.4441 15.976 18.2836L12.7684 15.9548C12.5736 15.8134 12.3081 15.8209 12.1217 15.9729L10.3432 17.4226C10.1368 17.5914 9.8258 17.4974 9.74677 17.2432L8.80318 14.2086C8.61943 13.6176 8.17247 13.145 7.59269 12.9286L5.32141 12.081C4.99732 11.9596 4.99455 11.502 5.31771 11.3775L18.4114 6.32632C18.689 6.21898 18.9754 6.46215 18.9149 6.75362Z"
+										fill="#B9BADB" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M15.8255 8.34786L9.31178 12.7057C9.06211 12.8731 8.94461 13.2006 9.02515 13.5072L9.72941 16.1953C9.77951 16.3858 10.0339 16.3663 10.0583 16.1695L10.2413 14.6954C10.2759 14.4179 10.3977 14.162 10.5867 13.9711L15.9624 8.54299C16.063 8.44173 15.9425 8.2698 15.8255 8.34786Z"
+										fill="#B9BADB" />
+								</g>
+								<defs>
+									<clipPath id="clip0_827_1385">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.268555)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="social__item">
+						<a href="https://www.instagram.com/sabiotrade/" target="_blank">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_827_1385)">
+									<path
+										d="M12 2.26855C14.717 2.26855 15.056 2.27855 16.122 2.32855C17.187 2.37855 17.912 2.54555 18.55 2.79355C19.21 3.04755 19.766 3.39155 20.322 3.94655C20.8305 4.44645 21.224 5.05114 21.475 5.71855C21.722 6.35555 21.89 7.08155 21.94 8.14655C21.987 9.21255 22 9.55155 22 12.2686C22 14.9856 21.99 15.3246 21.94 16.3906C21.89 17.4556 21.722 18.1806 21.475 18.8186C21.2247 19.4863 20.8311 20.0912 20.322 20.5906C19.822 21.0989 19.2173 21.4923 18.55 21.7436C17.913 21.9906 17.187 22.1586 16.122 22.2086C15.056 22.2556 14.717 22.2686 12 22.2686C9.283 22.2686 8.944 22.2586 7.878 22.2086C6.813 22.1586 6.088 21.9906 5.45 21.7436C4.78233 21.493 4.17753 21.0995 3.678 20.5906C3.16941 20.0907 2.77593 19.486 2.525 18.8186C2.277 18.1816 2.11 17.4556 2.06 16.3906C2.013 15.3246 2 14.9856 2 12.2686C2 9.55155 2.01 9.21255 2.06 8.14655C2.11 7.08055 2.277 6.35655 2.525 5.71855C2.77524 5.05073 3.1688 4.44588 3.678 3.94655C4.17767 3.43779 4.78243 3.04428 5.45 2.79355C6.088 2.54555 6.812 2.37855 7.878 2.32855C8.944 2.28155 9.283 2.26855 12 2.26855ZM12 7.26855C10.6739 7.26855 9.40215 7.79534 8.46447 8.73302C7.52678 9.6707 7 10.9425 7 12.2686C7 13.5946 7.52678 14.8664 8.46447 15.8041C9.40215 16.7418 10.6739 17.2686 12 17.2686C13.3261 17.2686 14.5979 16.7418 15.5355 15.8041C16.4732 14.8664 17 13.5946 17 12.2686C17 10.9425 16.4732 9.6707 15.5355 8.73302C14.5979 7.79534 13.3261 7.26855 12 7.26855ZM18.5 7.01855C18.5 6.68703 18.3683 6.36909 18.1339 6.13467C17.8995 5.90025 17.5815 5.76855 17.25 5.76855C16.9185 5.76855 16.6005 5.90025 16.3661 6.13467C16.1317 6.36909 16 6.68703 16 7.01855C16 7.35008 16.1317 7.66802 16.3661 7.90244C16.6005 8.13686 16.9185 8.26855 17.25 8.26855C17.5815 8.26855 17.8995 8.13686 18.1339 7.90244C18.3683 7.66802 18.5 7.35008 18.5 7.01855ZM12 9.26855C12.7956 9.26855 13.5587 9.58462 14.1213 10.1472C14.6839 10.7098 15 11.4729 15 12.2686C15 13.0642 14.6839 13.8273 14.1213 14.3899C13.5587 14.9525 12.7956 15.2686 12 15.2686C11.2044 15.2686 10.4413 14.9525 9.87868 14.3899C9.31607 13.8273 9 13.0642 9 12.2686C9 11.4729 9.31607 10.7098 9.87868 10.1472C10.4413 9.58462 11.2044 9.26855 12 9.26855Z"
+										fill="#B9BADB"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_827_1385">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.268555)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="social__item"><a href="https://www.facebook.com/profile.php?id=100075852953720"
+							target="_blank"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_827_1390)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M19.5565 2.26855C20.9051 2.26855 22 3.36348 22 4.71207V19.825C22 21.1736 20.9051 22.2686 19.5565 22.2686H15.3976V14.7328H17.9991L18.4941 11.5054H15.3976V9.41102C15.3976 8.52809 15.8301 7.66742 17.2171 7.66742H18.625V4.91977C18.625 4.91977 17.3473 4.70172 16.1257 4.70172C13.5754 4.70172 11.9085 6.24738 11.9085 9.04562V11.5054H9.07363V14.7328H11.9085V22.2686H4.44352C3.09492 22.2686 2 21.1736 2 19.825V4.71207C2 3.36348 3.09488 2.26855 4.44352 2.26855H19.5565V2.26855Z"
+										fill="#B9BADB"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_827_1390">
+										<rect width="20" height="20" fill="white" transform="translate(2 2.26855)"></rect>
+									</clipPath>
+								</defs>
+							</svg></a></div>
+				</div>
+			</div>
+			<div class="footer__last"><a href="mailto:support@sabiotrade.com"
+					class="footer__last-email buttonXS links links--primary">support@sabiotrade.com</a>
+				<div class="footer__last-copyright defaultXS">SabioTrade, 2021 - 2023</div>
+			</div>
+		</div>
+	</footer>
+	<div class="cookie-bar" style="display: flex;">
+		<div class="cookie-bar__content">
+			<p class="cookie-bar__text">Al continuar utilizando este sitio, aceptas nuestra <a href="cookie_policy"
+					class="cookie-bar__link links links--cookie">Política de Cookies</a>.</p>
+			<div class="cookie-bar__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18M6 6L18 18" stroke="#5F62A0" stroke-width="1.3" stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg></div>
+		</div>
+	</div>
+</body>
+
+</html>
